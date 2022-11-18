@@ -1,0 +1,17 @@
+create database table twitter_demo;
+
+create table twitter_demo.user (
+  id int  NOT NULL  AUTO_INCREMENT,
+  name varchar(10),
+  phone int,
+  birth_date DATE,
+  password varchar(10),
+  PRIMARY KEY(id)
+);
+
+create table twitter_demo.tweet (
+  id int  NOT NULL  AUTO_INCREMENT,
+  tweet varchar(10),
+  user_id int,
+  PRIMARY KEY(id)
+);
